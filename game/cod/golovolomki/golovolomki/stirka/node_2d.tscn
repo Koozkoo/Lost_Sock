@@ -1,0 +1,407 @@
+[gd_scene load_steps=5 format=3 uid="uid://tb2bny4yaein"]
+
+[ext_resource type="Script" path="res://Control.gd" id="1_m8vw0"]
+[ext_resource type="Texture2D" uid="uid://bsiy0mttc3agm" path="res://IMG_0529.png" id="1_nw2w0"]
+[ext_resource type="Texture2D" uid="uid://bv037v2pq6hu8" path="res://Безымянный.png" id="2_7mkx7"]
+[ext_resource type="Script" path="res://But.gd" id="3_i5q1d"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_m8vw0")
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+offset_left = -40.0
+offset_top = -30.0
+offset_right = 1197.0
+offset_bottom = 677.0
+texture = ExtResource("1_nw2w0")
+
+[node name="But" type="Button" parent="Control"]
+offset_left = 326.0
+offset_top = 384.0
+offset_right = 495.0
+offset_bottom = 533.0
+scale = Vector2(0.206521, 0.187765)
+flat = true
+script = ExtResource("3_i5q1d")
+
+[node name="But2" type="Button" parent="Control"]
+offset_left = 386.0
+offset_top = 384.0
+offset_right = 555.0
+offset_bottom = 533.0
+scale = Vector2(0.206521, 0.187765)
+flat = true
+script = ExtResource("3_i5q1d")
+
+[node name="But3" type="Button" parent="Control"]
+offset_left = 441.0
+offset_top = 384.0
+offset_right = 610.0
+offset_bottom = 533.0
+scale = Vector2(0.206521, 0.187765)
+flat = true
+script = ExtResource("3_i5q1d")
+
+[node name="But4" type="Button" parent="Control"]
+offset_left = 493.0
+offset_top = 384.0
+offset_right = 662.0
+offset_bottom = 533.0
+scale = Vector2(0.206521, 0.187765)
+flat = true
+script = ExtResource("3_i5q1d")
+
+[node name="But5" type="Button" parent="Control"]
+offset_left = 328.0
+offset_top = 437.0
+offset_right = 497.0
+offset_bottom = 586.0
+scale = Vector2(0.206521, 0.187765)
+flat = true
+script = ExtResource("3_i5q1d")
+
+[node name="But6" type="Button" parent="Control"]
+offset_left = 386.0
+offset_top = 437.0
+offset_right = 555.0
+offset_bottom = 586.0
+scale = Vector2(0.206521, 0.187765)
+flat = true
+script = ExtResource("3_i5q1d")
+
+[node name="But7" type="Button" parent="Control"]
+offset_left = 441.0
+offset_top = 437.0
+offset_right = 610.0
+offset_bottom = 586.0
+scale = Vector2(0.206521, 0.187765)
+flat = true
+script = ExtResource("3_i5q1d")
+
+[node name="But8" type="Button" parent="Control"]
+offset_left = 491.0
+offset_top = 440.0
+offset_right = 660.0
+offset_bottom = 589.0
+scale = Vector2(0.206521, 0.187765)
+flat = true
+script = ExtResource("3_i5q1d")
+
+[node name="But9" type="Button" parent="Control"]
+offset_left = 327.0
+offset_top = 493.0
+offset_right = 496.0
+offset_bottom = 642.0
+scale = Vector2(0.206521, 0.187765)
+flat = true
+script = ExtResource("3_i5q1d")
+
+[node name="But10" type="Button" parent="Control"]
+offset_left = 385.0
+offset_top = 492.0
+offset_right = 554.0
+offset_bottom = 641.0
+scale = Vector2(0.206521, 0.187765)
+flat = true
+script = ExtResource("3_i5q1d")
+
+[node name="But11" type="Button" parent="Control"]
+offset_left = 442.0
+offset_top = 491.0
+offset_right = 611.0
+offset_bottom = 640.0
+scale = Vector2(0.206521, 0.187765)
+flat = true
+script = ExtResource("3_i5q1d")
+
+[node name="But12" type="Button" parent="Control"]
+offset_left = 490.0
+offset_top = 493.0
+offset_right = 659.0
+offset_bottom = 642.0
+scale = Vector2(0.206521, 0.187765)
+flat = true
+script = ExtResource("3_i5q1d")
+
+[node name="But13" type="Button" parent="Control"]
+offset_left = 703.0
+offset_top = 383.0
+offset_right = 872.0
+offset_bottom = 532.0
+scale = Vector2(0.206521, 0.187765)
+flat = true
+script = ExtResource("3_i5q1d")
+
+[node name="But14" type="Button" parent="Control"]
+offset_left = 759.0
+offset_top = 383.0
+offset_right = 928.0
+offset_bottom = 532.0
+scale = Vector2(0.206521, 0.187765)
+flat = true
+script = ExtResource("3_i5q1d")
+
+[node name="But15" type="Button" parent="Control"]
+offset_left = 807.0
+offset_top = 382.0
+offset_right = 976.0
+offset_bottom = 531.0
+scale = Vector2(0.206521, 0.187765)
+flat = true
+script = ExtResource("3_i5q1d")
+
+[node name="But16" type="Button" parent="Control"]
+offset_left = 867.0
+offset_top = 382.0
+offset_right = 1036.0
+offset_bottom = 531.0
+scale = Vector2(0.206521, 0.187765)
+flat = true
+script = ExtResource("3_i5q1d")
+
+[node name="But17" type="Button" parent="Control"]
+offset_left = 704.0
+offset_top = 436.0
+offset_right = 873.0
+offset_bottom = 585.0
+scale = Vector2(0.206521, 0.187765)
+flat = true
+script = ExtResource("3_i5q1d")
+
+[node name="But18" type="Button" parent="Control"]
+offset_left = 760.0
+offset_top = 438.0
+offset_right = 929.0
+offset_bottom = 587.0
+scale = Vector2(0.206521, 0.187765)
+flat = true
+script = ExtResource("3_i5q1d")
+
+[node name="But19" type="Button" parent="Control"]
+offset_left = 810.0
+offset_top = 439.0
+offset_right = 979.0
+offset_bottom = 588.0
+scale = Vector2(0.206521, 0.187765)
+flat = true
+script = ExtResource("3_i5q1d")
+
+[node name="But20" type="Button" parent="Control"]
+offset_left = 867.0
+offset_top = 439.0
+offset_right = 1036.0
+offset_bottom = 588.0
+scale = Vector2(0.206521, 0.187765)
+flat = true
+script = ExtResource("3_i5q1d")
+
+[node name="But21" type="Button" parent="Control"]
+offset_left = 705.0
+offset_top = 491.0
+offset_right = 874.0
+offset_bottom = 640.0
+scale = Vector2(0.206521, 0.187765)
+flat = true
+script = ExtResource("3_i5q1d")
+
+[node name="But22" type="Button" parent="Control"]
+offset_left = 760.0
+offset_top = 493.0
+offset_right = 929.0
+offset_bottom = 642.0
+scale = Vector2(0.206521, 0.187765)
+flat = true
+script = ExtResource("3_i5q1d")
+
+[node name="But23" type="Button" parent="Control"]
+offset_left = 811.0
+offset_top = 493.0
+offset_right = 980.0
+offset_bottom = 642.0
+scale = Vector2(0.206521, 0.187765)
+flat = true
+script = ExtResource("3_i5q1d")
+
+[node name="But24" type="Button" parent="Control"]
+offset_left = 869.0
+offset_top = 494.0
+offset_right = 1038.0
+offset_bottom = 643.0
+scale = Vector2(0.206521, 0.187765)
+flat = true
+script = ExtResource("3_i5q1d")
+
+[node name="k1" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(343, 397)
+scale = Vector2(0.206521, 0.187765)
+texture = ExtResource("2_7mkx7")
+
+[node name="k2" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(402, 397)
+scale = Vector2(0.206521, 0.187765)
+texture = ExtResource("2_7mkx7")
+
+[node name="k3" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(458, 397)
+scale = Vector2(0.206521, 0.187765)
+texture = ExtResource("2_7mkx7")
+
+[node name="k4" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(508, 397)
+scale = Vector2(0.206521, 0.187765)
+texture = ExtResource("2_7mkx7")
+
+[node name="k5" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(344, 450)
+scale = Vector2(0.206521, 0.187765)
+texture = ExtResource("2_7mkx7")
+
+[node name="k6" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(401, 450)
+scale = Vector2(0.206521, 0.187765)
+texture = ExtResource("2_7mkx7")
+
+[node name="k7" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(458, 450)
+scale = Vector2(0.206521, 0.187765)
+texture = ExtResource("2_7mkx7")
+
+[node name="k8" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(507, 451)
+scale = Vector2(0.206521, 0.187765)
+texture = ExtResource("2_7mkx7")
+
+[node name="k9" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(344, 505)
+scale = Vector2(0.206521, 0.187765)
+texture = ExtResource("2_7mkx7")
+
+[node name="k10" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(402, 505)
+scale = Vector2(0.206521, 0.187765)
+texture = ExtResource("2_7mkx7")
+
+[node name="k11" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(458, 506)
+scale = Vector2(0.206521, 0.187765)
+texture = ExtResource("2_7mkx7")
+
+[node name="k12" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(507, 506)
+scale = Vector2(0.206521, 0.187765)
+texture = ExtResource("2_7mkx7")
+
+[node name="l1" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(718, 397)
+scale = Vector2(0.206521, 0.187765)
+texture = ExtResource("2_7mkx7")
+
+[node name="l2" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(777, 397)
+scale = Vector2(0.206521, 0.187765)
+texture = ExtResource("2_7mkx7")
+
+[node name="l3" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(826, 397)
+scale = Vector2(0.206521, 0.187765)
+texture = ExtResource("2_7mkx7")
+
+[node name="l4" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(883, 397)
+scale = Vector2(0.206521, 0.187765)
+texture = ExtResource("2_7mkx7")
+
+[node name="l5" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(719, 450)
+scale = Vector2(0.206521, 0.187765)
+texture = ExtResource("2_7mkx7")
+
+[node name="l6" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(776, 450)
+scale = Vector2(0.206521, 0.187765)
+texture = ExtResource("2_7mkx7")
+
+[node name="l7" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(826, 451)
+scale = Vector2(0.206521, 0.187765)
+texture = ExtResource("2_7mkx7")
+
+[node name="l8" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(882, 451)
+scale = Vector2(0.206521, 0.187765)
+texture = ExtResource("2_7mkx7")
+
+[node name="l9" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(719, 505)
+scale = Vector2(0.206521, 0.187765)
+texture = ExtResource("2_7mkx7")
+
+[node name="l10" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(777, 505)
+scale = Vector2(0.206521, 0.187765)
+texture = ExtResource("2_7mkx7")
+
+[node name="l11" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(826, 506)
+scale = Vector2(0.206521, 0.187765)
+texture = ExtResource("2_7mkx7")
+
+[node name="l12" type="Sprite2D" parent="Control"]
+visible = false
+position = Vector2(882, 506)
+scale = Vector2(0.206521, 0.187765)
+texture = ExtResource("2_7mkx7")
+
+[connection signal="pressed" from="Control/But" to="Control" method="_on_but_pressed"]
+[connection signal="pressed" from="Control/But2" to="Control" method="_on_but_2_pressed"]
+[connection signal="pressed" from="Control/But3" to="Control" method="_on_but_3_pressed"]
+[connection signal="pressed" from="Control/But4" to="Control" method="_on_but_4_pressed"]
+[connection signal="pressed" from="Control/But5" to="Control" method="_on_but_5_pressed"]
+[connection signal="pressed" from="Control/But6" to="Control" method="_on_but_6_pressed"]
+[connection signal="pressed" from="Control/But7" to="Control" method="_on_but_7_pressed"]
+[connection signal="pressed" from="Control/But8" to="Control" method="_on_but_8_pressed"]
+[connection signal="pressed" from="Control/But9" to="Control" method="_on_but_9_pressed"]
+[connection signal="pressed" from="Control/But10" to="Control" method="_on_but_10_pressed"]
+[connection signal="pressed" from="Control/But11" to="Control" method="_on_but_11_pressed"]
+[connection signal="pressed" from="Control/But12" to="Control" method="_on_but_12_pressed"]
+[connection signal="pressed" from="Control/But13" to="Control" method="_on_but_13_pressed"]
+[connection signal="pressed" from="Control/But14" to="Control" method="_on_but_14_pressed"]
+[connection signal="pressed" from="Control/But15" to="Control" method="_on_but_15_pressed"]
+[connection signal="pressed" from="Control/But16" to="Control" method="_on_but_16_pressed"]
+[connection signal="pressed" from="Control/But17" to="Control" method="_on_but_17_pressed"]
+[connection signal="pressed" from="Control/But18" to="Control" method="_on_but_18_pressed"]
+[connection signal="pressed" from="Control/But19" to="Control" method="_on_but_19_pressed"]
+[connection signal="pressed" from="Control/But20" to="Control" method="_on_but_20_pressed"]
+[connection signal="pressed" from="Control/But21" to="Control" method="_on_but_21_pressed"]
+[connection signal="pressed" from="Control/But22" to="Control" method="_on_but_22_pressed"]
+[connection signal="pressed" from="Control/But23" to="Control" method="_on_but_23_pressed"]
+[connection signal="pressed" from="Control/But24" to="Control" method="_on_but_24_pressed"]
