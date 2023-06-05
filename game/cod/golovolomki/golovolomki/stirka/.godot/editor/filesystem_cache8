@@ -1,9 +1,0 @@
-2a60927148abd1d33b818b535e306557
-::res://::1685947663
-But.gd::GDScript::-1::1685895859::0::1::::<>Button<>::
-Control.gd::GDScript::-1::1685895859::0::1::::<>Control<>::
-icon.svg::CompressedTexture2D::7389660515541314758::1685895859::1685947664::1::::<><>::
-IMG_0529.png::CompressedTexture2D::3667837404382711800::1685895859::1685947664::1::::<><>::
-node_2d.tscn::PackedScene::1337294272703836621::1685895859::0::1::::<><>::res://Control.gd<>uid://bsiy0mttc3agm<>uid://bv037v2pq6hu8<>res://But.gd
-sp.gd::GDScript::-1::1685895859::0::1::::<>Sprite2D<>::
-Безымянный.png::CompressedTexture2D::3913754210549905405::1685895859::1685947664::1::::<><>::
