@@ -1,0 +1,247 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Control.gd" type="Script" id=1]
+[ext_resource path="res://mic.png" type="Texture" id=2]
+
+[node name="micro" type="Node2D"]
+
+[node name="micro" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 0.825672, 0.789836 )
+script = ExtResource( 1 )
+
+[node name="micro_pic" type="TextureRect" parent="micro"]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 2 )
+
+[node name="12" type="Button" parent="micro"]
+margin_left = 379.0
+margin_top = 628.0
+margin_right = 391.0
+margin_bottom = 648.0
+rect_scale = Vector2( 5.43062, 2.67901 )
+focus_mode = 0
+flat = true
+
+[node name="06" type="Button" parent="micro"]
+margin_left = 460.0
+margin_top = 642.0
+margin_right = 472.0
+margin_bottom = 662.0
+rect_scale = Vector2( 4.62895, 2.22516 )
+flat = true
+
+[node name="16" type="Button" parent="micro"]
+margin_left = 522.0
+margin_top = 615.0
+margin_right = 534.0
+margin_bottom = 635.0
+rect_scale = Vector2( 3.69304, 2.22779 )
+flat = true
+
+[node name="30" type="Button" parent="micro"]
+margin_left = 579.0
+margin_top = 671.0
+margin_right = 591.0
+margin_bottom = 691.0
+rect_scale = Vector2( 3.41269, 1.60836 )
+flat = true
+
+[node name="26" type="Button" parent="micro"]
+margin_left = 635.0
+margin_top = 642.0
+margin_right = 647.0
+margin_bottom = 662.0
+rect_scale = Vector2( 4.02067, 2.30082 )
+flat = true
+
+[node name="02" type="Button" parent="micro"]
+margin_left = 690.0
+margin_top = 642.0
+margin_right = 702.0
+margin_bottom = 662.0
+rect_scale = Vector2( 3.46244, 1.7712 )
+flat = true
+
+[node name="18" type="Button" parent="micro"]
+margin_left = 747.0
+margin_top = 641.0
+margin_right = 759.0
+margin_bottom = 661.0
+rect_scale = Vector2( 4.04976, 2.30082 )
+flat = true
+
+[node name="cif12k" type="Label" parent="micro"]
+visible = false
+margin_left = 936.0
+margin_top = 394.0
+margin_right = 976.0
+margin_bottom = 408.0
+rect_scale = Vector2( 1.89036, 2.1092 )
+size_flags_horizontal = 0
+size_flags_stretch_ratio = 4.99
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "12"
+
+[node name="cif06k" type="Label" parent="micro"]
+visible = false
+margin_left = 936.0
+margin_top = 394.0
+margin_right = 976.0
+margin_bottom = 408.0
+rect_scale = Vector2( 1.89036, 2.1092 )
+size_flags_horizontal = 0
+size_flags_stretch_ratio = 4.99
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "06"
+
+[node name="cif16k" type="Label" parent="micro"]
+visible = false
+margin_left = 936.0
+margin_top = 394.0
+margin_right = 976.0
+margin_bottom = 408.0
+rect_scale = Vector2( 1.89036, 2.1092 )
+size_flags_horizontal = 0
+size_flags_stretch_ratio = 4.99
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "16"
+
+[node name="cif30k" type="Label" parent="micro"]
+visible = false
+margin_left = 936.0
+margin_top = 394.0
+margin_right = 976.0
+margin_bottom = 408.0
+rect_scale = Vector2( 1.89036, 2.1092 )
+size_flags_horizontal = 0
+size_flags_stretch_ratio = 4.99
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "30"
+
+[node name="cif26k" type="Label" parent="micro"]
+visible = false
+margin_left = 936.0
+margin_top = 394.0
+margin_right = 976.0
+margin_bottom = 408.0
+rect_scale = Vector2( 1.89036, 2.1092 )
+size_flags_horizontal = 0
+size_flags_stretch_ratio = 4.99
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "26"
+
+[node name="cif02k" type="Label" parent="micro"]
+visible = false
+margin_left = 936.0
+margin_top = 394.0
+margin_right = 976.0
+margin_bottom = 408.0
+rect_scale = Vector2( 1.89036, 2.1092 )
+size_flags_horizontal = 0
+size_flags_stretch_ratio = 4.99
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "02
+"
+
+[node name="cif18k" type="Label" parent="micro"]
+visible = false
+margin_left = 936.0
+margin_top = 394.0
+margin_right = 976.0
+margin_bottom = 408.0
+rect_scale = Vector2( 1.89036, 2.1092 )
+size_flags_horizontal = 0
+size_flags_stretch_ratio = 4.99
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "18
+"
+
+[node name="cif12k2" type="Label" parent="micro"]
+margin_left = 387.0
+margin_top = 633.0
+margin_right = 427.0
+margin_bottom = 647.0
+rect_scale = Vector2( 3.00958, 3.41415 )
+size_flags_horizontal = 0
+size_flags_stretch_ratio = 4.99
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "12"
+
+[node name="cif06k2" type="Label" parent="micro"]
+margin_left = 466.0
+margin_top = 643.0
+margin_right = 506.0
+margin_bottom = 657.0
+rect_scale = Vector2( 2.63146, 3.18149 )
+size_flags_horizontal = 0
+size_flags_stretch_ratio = 4.99
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "06"
+
+[node name="cif16k2" type="Label" parent="micro"]
+margin_left = 527.0
+margin_top = 618.0
+margin_right = 567.0
+margin_bottom = 632.0
+rect_scale = Vector2( 2.30302, 3.16407 )
+size_flags_horizontal = 0
+size_flags_stretch_ratio = 4.99
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "16"
+
+[node name="cif30k2" type="Label" parent="micro"]
+margin_left = 586.0
+margin_top = 674.0
+margin_right = 626.0
+margin_bottom = 688.0
+rect_scale = Vector2( 1.89036, 2.1092 )
+size_flags_horizontal = 0
+size_flags_stretch_ratio = 4.99
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "30"
+
+[node name="cif26k2" type="Label" parent="micro"]
+margin_left = 638.0
+margin_top = 644.0
+margin_right = 678.0
+margin_bottom = 658.0
+rect_scale = Vector2( 2.50778, 3.55965 )
+size_flags_horizontal = 0
+size_flags_stretch_ratio = 4.99
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "26"
+
+[node name="cif02k2" type="Label" parent="micro"]
+margin_left = 693.0
+margin_top = 644.0
+margin_right = 733.0
+margin_bottom = 675.0
+rect_scale = Vector2( 2.00646, 2.40218 )
+size_flags_horizontal = 0
+size_flags_stretch_ratio = 4.99
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "02
+"
+
+[node name="cif18k2" type="Label" parent="micro"]
+margin_left = 748.0
+margin_top = 642.0
+margin_right = 788.0
+margin_bottom = 673.0
+rect_scale = Vector2( 2.69548, 3.05908 )
+size_flags_horizontal = 0
+size_flags_stretch_ratio = 4.99
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "18
+"
+
+[connection signal="pressed" from="micro/12" to="micro" method="_on_12_pressed"]
+[connection signal="pressed" from="micro/06" to="micro" method="_on_06_pressed"]
+[connection signal="pressed" from="micro/16" to="micro" method="_on_16_pressed"]
+[connection signal="pressed" from="micro/30" to="micro" method="_on_30_pressed"]
+[connection signal="pressed" from="micro/26" to="micro" method="_on_26_pressed"]
+[connection signal="pressed" from="micro/02" to="micro" method="_on_02_pressed"]
+[connection signal="pressed" from="micro/18" to="micro" method="_on_18_pressed"]
