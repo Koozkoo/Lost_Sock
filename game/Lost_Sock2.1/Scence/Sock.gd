@@ -1,16 +1,16 @@
 extends KinematicBody2D
 
 
-const SPEED = 250
+const SPEED = 400
 
 const FLOOR = Vector2(0,-1)
-const GRAVITY = 970
-const JUMP_POWER = 850
+const GRAVITY = 1970
+const JUMP_POWER = 1200
 
 var Health = 100
 var velocity = Vector2()
 
-func ApplyDMG(dmg: int):
+func ApplyDMG(dmg :int):
 	Health -= dmg
 	if Health <=0:
 		Health=0
@@ -47,6 +47,19 @@ func _physics_process(delta):
 
 
 
+
+
+
+func _on_Stirka_body_entered(body):
+	get_tree().change_scene("res://stirka/stirka.tscn") 
+	pass # Replace with function body.
+
+
+func _on_micro_body_entered(body):
+	get_tree().change_scene("res://micro/micro.tscn")
+	pass # Replace with function body.
+
+
 func _on_Door_body_entered(body):
-	get_tree().change_scene("res://Scence/Map.tscn")
+	get_tree().change_scene("res://Scence/Map2.tscn")
 	pass # Replace with function body.

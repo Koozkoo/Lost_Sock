@@ -1,7 +1,6 @@
 extends Area2D
 
-const FLOOR= Vector2(0,-1)
-const GRAVITY=970
+
 
 func _on_Cat_body_entered(body):
 	if body.name =="Sock":
@@ -19,3 +18,7 @@ func _ready():
 	$AnimationPlayer.play("Angry")
 
 
+
+
+func _on_Stirka_body_entered(body):
+	pass # Replace with function body.

@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://sprite/Hallway.png" type="Texture" id=1]
 [ext_resource path="res://sprite/Kitchen.png" type="Texture" id=2]
@@ -83,13 +83,19 @@ extents = Vector2( 399, 3 )
 extents = Vector2( 299.5, 6.9375 )
 
 [sub_resource type="RectangleShape2D" id=11]
-extents = Vector2( 358, 7 )
+extents = Vector2( 350, 8 )
 
 [sub_resource type="CircleShape2D" id=12]
 radius = 63.2851
 
 [sub_resource type="CircleShape2D" id=13]
 radius = 64.2806
+
+[sub_resource type="RectangleShape2D" id=20]
+extents = Vector2( 64.5, 58.8438 )
+
+[sub_resource type="CircleShape2D" id=19]
+radius = 88.6454
 
 [node name="Map" type="Node2D"]
 
@@ -230,12 +236,9 @@ __meta__ = {
 }
 
 [node name="Htable" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 5689, 1012 )
+position = Vector2( 5692, 1013 )
 shape = SubResource( 11 )
 one_way_collision = true
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="clothL" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 5188, 1264 )
@@ -252,12 +255,17 @@ scale = Vector2( 1, 0.1 )
 shape = SubResource( 13 )
 one_way_collision = true
 
+[node name="Kostrulya" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 11109.5, 738.844 )
+shape = SubResource( 20 )
+
 [node name="Sock" parent="." instance=ExtResource( 4 )]
-position = Vector2( 2595, 1330 )
+position = Vector2( 2601, 1326 )
 
 [node name="Camera2D" type="Camera2D" parent="Sock"]
 position = Vector2( 87, 10 )
 current = true
+zoom = Vector2( 1.4, 1.4 )
 limit_left = 1
 limit_top = 1
 limit_right = 12021
@@ -280,4 +288,10 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[connection signal="body_entered" from="Cat" to="Sock" method="_on_Cat_body_entered"]
+[node name="Stirka" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stirka"]
+position = Vector2( 2368, 1155 )
+shape = SubResource( 19 )
+
+[connection signal="body_entered" from="Stirka" to="Sock" method="_on_Stirka_body_entered"]

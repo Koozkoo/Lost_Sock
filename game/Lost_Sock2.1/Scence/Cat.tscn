@@ -1,11 +1,18 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://sprite/Cat4.png" type="Texture" id=1]
+[ext_resource path="res://sprite/Cat44.png" type="Texture" id=2]
+[ext_resource path="res://sprite/Cat33.png" type="Texture" id=3]
+[ext_resource path="res://sprite/Cat11.png" type="Texture" id=4]
 [ext_resource path="res://Scence/Cat.gd" type="Script" id=5]
+[ext_resource path="res://sprite/Cat22.png" type="Texture" id=6]
+[ext_resource path="res://sprite/Cat1.png" type="Texture" id=7]
+[ext_resource path="res://sprite/Cat3.png" type="Texture" id=8]
+[ext_resource path="res://sprite/Cat2.png" type="Texture" id=9]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 1 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 7 ), ExtResource( 7 ), ExtResource( 1 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 7 ), ExtResource( 1 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 7 ), ExtResource( 1 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 7 ), ExtResource( 1 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "walk",
 "speed": 5.0
@@ -21,6 +28,7 @@ frames = SubResource( 1 )
 animation = "walk"
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2( -193, -180 )
-scale = Vector2( 5, 5 )
-polygon = PoolVector2Array( 68.6, 15.2, 73.6, 8, 81.2, 1.4, 82.2, 2.6, 82, 7, 82.2, 13, 87.4, 13.2, 92.4, 14.2, 93.8, 14.6, 106.8, 11.2, 113.2, 11, 114.6, 12.6, 112.4, 17.2, 105.6, 28.6, 105.6, 37.8, 114, 38, 123, 40.2, 130.6, 45, 133.8, 42.4, 142.4, 41.4, 145.2, 39, 145.4, 36.8, 143.4, 35.4, 141.2, 35.8, 139.4, 34.8, 139, 33.4, 140.8, 31.8, 143.6, 31.8, 147.2, 32.6, 150, 35.2, 150.4, 38, 149.8, 39.8, 147.8, 42.4, 144.6, 44.4, 141, 45.8, 136.6, 45.8, 133.6, 47.4, 136.6, 50.4, 137.6, 52.4, 138, 55.8, 137.8, 59.4, 136.2, 68.6, 133.4, 75.2, 131.6, 78.6, 128.8, 82, 124.8, 82.8, 122.4, 80.6, 124, 77.4, 125, 70.4, 125.2, 69.2, 123.2, 68, 120.6, 71.4, 118, 80.8, 115, 82, 112.4, 81.2, 112, 79.6, 114, 73, 114.4, 69.6, 113.8, 66.2, 104, 63.8, 101.4, 68.2, 95.6, 81.4, 94.6, 84.4, 92.4, 85.8, 88.8, 85.6, 86.4, 84, 88.6, 76.2, 91.4, 66.6, 91, 65.8, 86.6, 73.6, 83, 80.2, 80.2, 82.8, 77.6, 82.8, 76, 82.2, 74.4, 80.6, 74.4, 78.8, 83.8, 59.6, 83.8, 55.8, 78.8, 56.4, 73, 55.6, 66.8, 53.6, 61.2, 50.6, 59.4, 45.4, 59.8, 39.4, 60, 33.6, 63, 23, 67.4, 18.2 )
+position = Vector2( 308, 72 )
+polygon = PoolVector2Array( -164, -30, -109, -58, -37, -64, -38, -111, -81, -188, -78, -198, -36, -194, 4, -184, 24, -179, 74, -188, 82, -199, 84, -245, 132, -202, 152, -169, 153, -160, 175, -135, 189, -101, 192, -72, 190, -53, 194, -37, 191, -15, 177, 5, 133, 24, 79, 28, 69, 24, 75, 55, 97, 97, 113, 136, 118, 147, 108, 161, 83, 156, 66, 133, 45, 91, 35, 77, 39, 98, 47, 135, 53, 153, 58, 162, 54, 174, 35, 177, 20, 171, -32, 62, -32, 61, -79, 80, -79, 112, -69, 147, -73, 157, -92, 157, -103, 143, -107, 119, -119, 95, -126, 88, -135, 97, -130, 132, -128, 144, -120, 152, -134, 162, -152, 156, -176, 129, -192, 84, -198, 23, -193, -2, -177, -15, -196, -25, -214, -24, -248, -39, -261, -65, -246, -86, -217, -94, -207, -85, -207, -76, -220, -73, -235, -72, -237, -61, -223, -45, -199, -42, -179, -38 )
+
+[connection signal="body_entered" from="." to="." method="_on_Cat_body_entered"]

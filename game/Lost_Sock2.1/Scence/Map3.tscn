@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://sprite/Hallway.png" type="Texture" id=1]
 [ext_resource path="res://sprite/Kitchen.png" type="Texture" id=2]
@@ -83,13 +83,16 @@ extents = Vector2( 399, 3 )
 extents = Vector2( 299.5, 6.9375 )
 
 [sub_resource type="RectangleShape2D" id=11]
-extents = Vector2( 358, 7 )
+extents = Vector2( 348.5, 10 )
 
 [sub_resource type="CircleShape2D" id=12]
 radius = 63.2851
 
 [sub_resource type="CircleShape2D" id=13]
 radius = 64.2806
+
+[sub_resource type="RectangleShape2D" id=19]
+extents = Vector2( 67.5, 56.75 )
 
 [node name="Map" type="Node2D"]
 
@@ -230,7 +233,7 @@ __meta__ = {
 }
 
 [node name="Htable" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 5689, 1012 )
+position = Vector2( 5690.5, 1015 )
 shape = SubResource( 11 )
 one_way_collision = true
 __meta__ = {
@@ -252,12 +255,17 @@ scale = Vector2( 1, 0.1 )
 shape = SubResource( 13 )
 one_way_collision = true
 
+[node name="Kostrulya" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 11108, 737 )
+shape = SubResource( 19 )
+
 [node name="Sock" parent="." instance=ExtResource( 4 )]
 position = Vector2( 11694, 264 )
 
 [node name="Camera2D" type="Camera2D" parent="Sock"]
 position = Vector2( 87, 10 )
 current = true
+zoom = Vector2( 1.4, 1.4 )
 limit_left = 1
 limit_top = 1
 limit_right = 12021
