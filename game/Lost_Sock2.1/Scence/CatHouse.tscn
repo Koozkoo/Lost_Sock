@@ -96,7 +96,7 @@ shape = SubResource( 7 )
 [node name="Door" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Door"]
-position = Vector2( 729, 749 )
+position = Vector2( 774, 638 )
 shape = SubResource( 2 )
 __meta__ = {
 "_edit_lock_": true

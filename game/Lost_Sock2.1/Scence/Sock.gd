@@ -61,5 +61,10 @@ func _on_micro_body_entered(body):
 
 
 func _on_Door_body_entered(body):
-	get_tree().change_scene("res://Scence/Map2.tscn")
+	get_tree().change_scene("res://Scence/Map4.tscn")
+	pass # Replace with function body.
+
+
+func _on_mic_body_entered(body):
+	get_tree().change_scene("res://micro/micro.tscn")
 	pass # Replace with function body.

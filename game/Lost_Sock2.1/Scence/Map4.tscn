@@ -260,7 +260,7 @@ position = Vector2( 11109.5, 738.844 )
 shape = SubResource( 20 )
 
 [node name="Sock" parent="." instance=ExtResource( 4 )]
-position = Vector2( 2601, 1326 )
+position = Vector2( 10154, 1320 )
 
 [node name="Camera2D" type="Camera2D" parent="Sock"]
 position = Vector2( 87, 10 )

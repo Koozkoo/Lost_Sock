@@ -83,7 +83,7 @@ extents = Vector2( 399, 3 )
 extents = Vector2( 299.5, 6.9375 )
 
 [sub_resource type="RectangleShape2D" id=11]
-extents = Vector2( 348.5, 10 )
+extents = Vector2( 350, 8 )
 
 [sub_resource type="CircleShape2D" id=12]
 radius = 63.2851
@@ -91,8 +91,8 @@ radius = 63.2851
 [sub_resource type="CircleShape2D" id=13]
 radius = 64.2806
 
-[sub_resource type="RectangleShape2D" id=19]
-extents = Vector2( 67.5, 56.75 )
+[sub_resource type="RectangleShape2D" id=20]
+extents = Vector2( 64.5, 58.8438 )
 
 [node name="Map" type="Node2D"]
 
@@ -233,12 +233,9 @@ __meta__ = {
 }
 
 [node name="Htable" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 5690.5, 1015 )
+position = Vector2( 5692, 1013 )
 shape = SubResource( 11 )
 one_way_collision = true
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="clothL" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 5188, 1264 )
@@ -256,11 +253,11 @@ shape = SubResource( 13 )
 one_way_collision = true
 
 [node name="Kostrulya" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 11108, 737 )
-shape = SubResource( 19 )
+position = Vector2( 11109.5, 738.844 )
+shape = SubResource( 20 )
 
 [node name="Sock" parent="." instance=ExtResource( 4 )]
-position = Vector2( 11694, 264 )
+position = Vector2( 11669, 265 )
 
 [node name="Camera2D" type="Camera2D" parent="Sock"]
 position = Vector2( 87, 10 )
@@ -271,6 +268,9 @@ limit_top = 1
 limit_right = 12021
 limit_bottom = 1621
 editor_draw_limits = true
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Door" type="Sprite" parent="."]
 position = Vector2( 3305, 1440 )
