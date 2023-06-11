@@ -1,0 +1,392 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://stirka/Control.gd" type="Script" id=1]
+[ext_resource path="res://stirka/Безымянный.png" type="Texture" id=2]
+[ext_resource path="res://stirka/IMG_0529.png" type="Texture" id=3]
+
+[node name="stirka" type="Node2D"]
+
+[node name="stirkaa" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 1 )
+
+[node name="stirka_pic" type="TextureRect" parent="stirkaa"]
+margin_left = -37.0
+margin_top = -28.0
+margin_right = 954.0
+margin_bottom = 593.0
+rect_scale = Vector2( 1.10814, 1.05385 )
+texture = ExtResource( 3 )
+
+[node name="k1" type="Button" parent="stirkaa"]
+margin_left = 292.0
+margin_top = 357.0
+margin_right = 304.0
+margin_bottom = 377.0
+rect_scale = Vector2( 1.79778, 1 )
+focus_mode = 0
+flat = true
+
+[node name="k2" type="Button" parent="stirkaa"]
+margin_left = 345.0
+margin_top = 357.0
+margin_right = 357.0
+margin_bottom = 377.0
+rect_scale = Vector2( 1.79778, 1 )
+flat = true
+
+[node name="k3" type="Button" parent="stirkaa"]
+margin_left = 394.0
+margin_top = 357.0
+margin_right = 406.0
+margin_bottom = 377.0
+rect_scale = Vector2( 1.79778, 1 )
+flat = true
+
+[node name="k4" type="Button" parent="stirkaa"]
+margin_left = 438.0
+margin_top = 357.0
+margin_right = 450.0
+margin_bottom = 377.0
+rect_scale = Vector2( 1.79778, 1 )
+flat = true
+
+[node name="k5" type="Button" parent="stirkaa"]
+margin_left = 293.0
+margin_top = 408.0
+margin_right = 305.0
+margin_bottom = 428.0
+rect_scale = Vector2( 1.79778, 1 )
+flat = true
+
+[node name="k6" type="Button" parent="stirkaa"]
+margin_left = 344.0
+margin_top = 407.0
+margin_right = 356.0
+margin_bottom = 427.0
+rect_scale = Vector2( 1.79778, 1 )
+flat = true
+
+[node name="k7" type="Button" parent="stirkaa"]
+margin_left = 393.0
+margin_top = 407.0
+margin_right = 405.0
+margin_bottom = 427.0
+rect_scale = Vector2( 1.79778, 1 )
+flat = true
+
+[node name="k8" type="Button" parent="stirkaa"]
+margin_left = 438.0
+margin_top = 407.0
+margin_right = 450.0
+margin_bottom = 427.0
+rect_scale = Vector2( 1.79778, 1 )
+flat = true
+
+[node name="k9" type="Button" parent="stirkaa"]
+margin_left = 293.0
+margin_top = 458.0
+margin_right = 305.0
+margin_bottom = 478.0
+rect_scale = Vector2( 1.79778, 1 )
+flat = true
+
+[node name="k10" type="Button" parent="stirkaa"]
+margin_left = 344.0
+margin_top = 458.0
+margin_right = 356.0
+margin_bottom = 478.0
+rect_scale = Vector2( 1.79778, 1 )
+flat = true
+
+[node name="k11" type="Button" parent="stirkaa"]
+margin_left = 393.0
+margin_top = 458.0
+margin_right = 405.0
+margin_bottom = 478.0
+rect_scale = Vector2( 1.79778, 1 )
+flat = true
+
+[node name="k12" type="Button" parent="stirkaa"]
+margin_left = 438.0
+margin_top = 458.0
+margin_right = 450.0
+margin_bottom = 478.0
+rect_scale = Vector2( 1.79778, 1 )
+flat = true
+
+[node name="l13" type="Button" parent="stirkaa"]
+margin_left = 627.0
+margin_top = 358.0
+margin_right = 639.0
+margin_bottom = 378.0
+rect_scale = Vector2( 1.79778, 1 )
+flat = true
+
+[node name="l14" type="Button" parent="stirkaa"]
+margin_left = 677.0
+margin_top = 358.0
+margin_right = 689.0
+margin_bottom = 378.0
+rect_scale = Vector2( 1.79778, 1 )
+flat = true
+
+[node name="l15" type="Button" parent="stirkaa"]
+margin_left = 720.0
+margin_top = 358.0
+margin_right = 732.0
+margin_bottom = 378.0
+rect_scale = Vector2( 1.79778, 1 )
+flat = true
+
+[node name="l16" type="Button" parent="stirkaa"]
+margin_left = 771.0
+margin_top = 358.0
+margin_right = 783.0
+margin_bottom = 378.0
+rect_scale = Vector2( 1.79778, 1 )
+flat = true
+
+[node name="l17" type="Button" parent="stirkaa"]
+margin_left = 627.0
+margin_top = 407.0
+margin_right = 639.0
+margin_bottom = 427.0
+rect_scale = Vector2( 1.79778, 1 )
+flat = true
+
+[node name="l18" type="Button" parent="stirkaa"]
+margin_left = 676.0
+margin_top = 407.0
+margin_right = 688.0
+margin_bottom = 427.0
+rect_scale = Vector2( 1.79778, 1 )
+flat = true
+
+[node name="l19" type="Button" parent="stirkaa"]
+margin_left = 720.0
+margin_top = 407.0
+margin_right = 732.0
+margin_bottom = 427.0
+rect_scale = Vector2( 1.79778, 1 )
+flat = true
+
+[node name="l20" type="Button" parent="stirkaa"]
+margin_left = 772.0
+margin_top = 407.0
+margin_right = 784.0
+margin_bottom = 427.0
+rect_scale = Vector2( 1.79778, 1 )
+flat = true
+
+[node name="l21" type="Button" parent="stirkaa"]
+margin_left = 626.0
+margin_top = 458.0
+margin_right = 638.0
+margin_bottom = 478.0
+rect_scale = Vector2( 1.79778, 1 )
+flat = true
+
+[node name="l22" type="Button" parent="stirkaa"]
+margin_left = 676.0
+margin_top = 458.0
+margin_right = 688.0
+margin_bottom = 478.0
+rect_scale = Vector2( 1.79778, 1 )
+flat = true
+
+[node name="l23" type="Button" parent="stirkaa"]
+margin_left = 721.0
+margin_top = 458.0
+margin_right = 733.0
+margin_bottom = 478.0
+rect_scale = Vector2( 1.79778, 1 )
+flat = true
+
+[node name="l24" type="Button" parent="stirkaa"]
+margin_left = 772.0
+margin_top = 458.0
+margin_right = 784.0
+margin_bottom = 478.0
+rect_scale = Vector2( 1.79778, 1 )
+flat = true
+
+[node name="le1" type="Sprite" parent="stirkaa"]
+visible = false
+position = Vector2( 637.451, 367.884 )
+scale = Vector2( 0.167096, 0.16857 )
+texture = ExtResource( 2 )
+
+[node name="le2" type="Sprite" parent="stirkaa"]
+visible = false
+position = Vector2( 687.451, 367.884 )
+scale = Vector2( 0.167096, 0.16857 )
+texture = ExtResource( 2 )
+
+[node name="le3" type="Sprite" parent="stirkaa"]
+visible = false
+position = Vector2( 731.451, 366.884 )
+scale = Vector2( 0.167096, 0.16857 )
+texture = ExtResource( 2 )
+
+[node name="le4" type="Sprite" parent="stirkaa"]
+visible = false
+position = Vector2( 781.451, 367.884 )
+scale = Vector2( 0.167096, 0.16857 )
+texture = ExtResource( 2 )
+
+[node name="le5" type="Sprite" parent="stirkaa"]
+visible = false
+position = Vector2( 637.451, 417.884 )
+scale = Vector2( 0.167096, 0.16857 )
+texture = ExtResource( 2 )
+
+[node name="le6" type="Sprite" parent="stirkaa"]
+visible = false
+position = Vector2( 687.451, 416.884 )
+scale = Vector2( 0.167096, 0.16857 )
+texture = ExtResource( 2 )
+
+[node name="le7" type="Sprite" parent="stirkaa"]
+visible = false
+position = Vector2( 731.451, 417.884 )
+scale = Vector2( 0.167096, 0.16857 )
+texture = ExtResource( 2 )
+
+[node name="le8" type="Sprite" parent="stirkaa"]
+visible = false
+position = Vector2( 782.451, 418.884 )
+scale = Vector2( 0.167096, 0.16857 )
+texture = ExtResource( 2 )
+
+[node name="le9" type="Sprite" parent="stirkaa"]
+visible = false
+position = Vector2( 637.451, 467.884 )
+scale = Vector2( 0.167096, 0.16857 )
+texture = ExtResource( 2 )
+
+[node name="le10" type="Sprite" parent="stirkaa"]
+visible = false
+position = Vector2( 686.451, 467.884 )
+scale = Vector2( 0.167096, 0.16857 )
+texture = ExtResource( 2 )
+
+[node name="le11" type="Sprite" parent="stirkaa"]
+visible = false
+position = Vector2( 731.451, 468.884 )
+scale = Vector2( 0.167096, 0.16857 )
+texture = ExtResource( 2 )
+
+[node name="le12" type="Sprite" parent="stirkaa"]
+visible = false
+position = Vector2( 782.451, 469.884 )
+scale = Vector2( 0.167096, 0.16857 )
+texture = ExtResource( 2 )
+
+[node name="le13" type="Sprite" parent="stirkaa"]
+visible = false
+position = Vector2( 304, 368 )
+scale = Vector2( 0.167096, 0.16857 )
+texture = ExtResource( 2 )
+
+[node name="le14" type="Sprite" parent="stirkaa"]
+visible = false
+position = Vector2( 355, 367 )
+scale = Vector2( 0.167096, 0.16857 )
+texture = ExtResource( 2 )
+
+[node name="le15" type="Sprite" parent="stirkaa"]
+visible = false
+position = Vector2( 404, 368 )
+scale = Vector2( 0.167096, 0.16857 )
+texture = ExtResource( 2 )
+
+[node name="le16" type="Sprite" parent="stirkaa"]
+visible = false
+position = Vector2( 448, 367 )
+scale = Vector2( 0.167096, 0.16857 )
+texture = ExtResource( 2 )
+
+[node name="le17" type="Sprite" parent="stirkaa"]
+visible = false
+position = Vector2( 304, 417 )
+scale = Vector2( 0.167096, 0.16857 )
+texture = ExtResource( 2 )
+
+[node name="le18" type="Sprite" parent="stirkaa"]
+visible = false
+position = Vector2( 355, 416 )
+scale = Vector2( 0.167096, 0.16857 )
+texture = ExtResource( 2 )
+
+[node name="le19" type="Sprite" parent="stirkaa"]
+visible = false
+position = Vector2( 404, 417 )
+scale = Vector2( 0.167096, 0.16857 )
+texture = ExtResource( 2 )
+
+[node name="le20" type="Sprite" parent="stirkaa"]
+visible = false
+position = Vector2( 448.451, 416.884 )
+scale = Vector2( 0.167096, 0.16857 )
+texture = ExtResource( 2 )
+
+[node name="le21" type="Sprite" parent="stirkaa"]
+visible = false
+position = Vector2( 303, 468 )
+scale = Vector2( 0.167096, 0.16857 )
+texture = ExtResource( 2 )
+
+[node name="le22" type="Sprite" parent="stirkaa"]
+visible = false
+position = Vector2( 355, 467 )
+scale = Vector2( 0.167096, 0.16857 )
+texture = ExtResource( 2 )
+
+[node name="le23" type="Sprite" parent="stirkaa"]
+visible = false
+position = Vector2( 404, 468 )
+scale = Vector2( 0.167096, 0.16857 )
+texture = ExtResource( 2 )
+
+[node name="le24" type="Sprite" parent="stirkaa"]
+visible = false
+position = Vector2( 448.451, 467.884 )
+scale = Vector2( 0.167096, 0.16857 )
+texture = ExtResource( 2 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 510, 300 )
+current = true
+zoom = Vector2( 0.6, 0.6 )
+limit_left = 2
+limit_top = 8
+limit_right = 1021
+limit_bottom = 596
+editor_draw_limits = true
+
+[connection signal="pressed" from="stirkaa/k1" to="stirkaa" method="_on_k1_pressed"]
+[connection signal="pressed" from="stirkaa/k2" to="stirkaa" method="_on_k2_pressed"]
+[connection signal="pressed" from="stirkaa/k3" to="stirkaa" method="_on_k3_pressed"]
+[connection signal="pressed" from="stirkaa/k4" to="stirkaa" method="_on_k4_pressed"]
+[connection signal="pressed" from="stirkaa/k5" to="stirkaa" method="_on_k5_pressed"]
+[connection signal="pressed" from="stirkaa/k6" to="stirkaa" method="_on_k6_pressed"]
+[connection signal="pressed" from="stirkaa/k7" to="stirkaa" method="_on_k7_pressed"]
+[connection signal="pressed" from="stirkaa/k8" to="stirkaa" method="_on_k8_pressed"]
+[connection signal="pressed" from="stirkaa/k9" to="stirkaa" method="_on_k9_pressed"]
+[connection signal="pressed" from="stirkaa/k10" to="stirkaa" method="_on_k10_pressed"]
+[connection signal="pressed" from="stirkaa/k11" to="stirkaa" method="_on_k11_pressed"]
+[connection signal="pressed" from="stirkaa/k12" to="stirkaa" method="_on_k12_pressed"]
+[connection signal="pressed" from="stirkaa/l13" to="stirkaa" method="_on_l13_pressed"]
+[connection signal="pressed" from="stirkaa/l14" to="stirkaa" method="_on_l14_pressed"]
+[connection signal="pressed" from="stirkaa/l15" to="stirkaa" method="_on_l15_pressed"]
+[connection signal="pressed" from="stirkaa/l16" to="stirkaa" method="_on_l16_pressed"]
+[connection signal="pressed" from="stirkaa/l17" to="stirkaa" method="_on_l17_pressed"]
+[connection signal="pressed" from="stirkaa/l18" to="stirkaa" method="_on_l18_pressed"]
+[connection signal="pressed" from="stirkaa/l19" to="stirkaa" method="_on_l19_pressed"]
+[connection signal="pressed" from="stirkaa/l20" to="stirkaa" method="_on_l20_pressed"]
+[connection signal="pressed" from="stirkaa/l21" to="stirkaa" method="_on_l21_pressed"]
+[connection signal="pressed" from="stirkaa/l22" to="stirkaa" method="_on_l22_pressed"]
+[connection signal="pressed" from="stirkaa/l23" to="stirkaa" method="_on_l23_pressed"]
+[connection signal="pressed" from="stirkaa/l24" to="stirkaa" method="_on_l24_pressed"]
