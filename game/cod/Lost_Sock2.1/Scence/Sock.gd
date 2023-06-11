@@ -37,7 +37,7 @@ func damage(dmg :int):
 	Health -= dmg
 	if Health <=0:
 		Health=0
-		get_tree().change_scene("res://Scence/death.tscn")
+		get_tree().change_scene("res://Scence/death2.tscn")
 		
 
 		
