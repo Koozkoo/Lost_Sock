@@ -1,10 +1,29 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://sprite/open mic.png" type="Texture" id=1]
 [ext_resource path="res://Scence/Open mic.gd" type="Script" id=2]
+[ext_resource path="res://sprite/next.png" type="Texture" id=3]
+[ext_resource path="res://sprite/neext.png" type="Texture" id=4]
+[ext_resource path="res://di_Three.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scence/Sock.tscn" type="PackedScene" id=6]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 3.625, 3.90625 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 1.875, 2.375 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 4.625, 4.6875 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 9.125, 5 )
 
 [node name="Open mic" type="Node2D"]
 script = ExtResource( 2 )
+
+[node name="di_Three" parent="." instance=ExtResource( 5 )]
+position = Vector2( 117, 574 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
@@ -31,5 +50,37 @@ margin_right = 1074.0
 margin_bottom = 922.0
 rect_scale = Vector2( 10.8428, 5.50377 )
 focus_mode = 0
+
+[node name="Sprite" type="Sprite" parent="Button"]
+position = Vector2( 5.81031, 9.81152 )
+scale = Vector2( 0.00688137, 0.0244934 )
+texture = ExtResource( 3 )
+
+[node name="Sprite2" type="Sprite" parent="Button"]
+position = Vector2( 6.64063, 10.1748 )
+scale = Vector2( 0.0106837, 0.0173808 )
+texture = ExtResource( 4 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 587, 921 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 592, 923 )
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 598, 920 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 591, 913 )
+shape = SubResource( 4 )
+
+[node name="Sock" parent="StaticBody2D" instance=ExtResource( 6 )]
+position = Vector2( 591, 918 )
+scale = Vector2( 0.011457, 0.0136559 )
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://sprite/Hallway.png" type="Texture" id=1]
 [ext_resource path="res://sprite/Kitchen.png" type="Texture" id=2]
@@ -8,6 +8,9 @@
 [ext_resource path="res://sprite/door2.png" type="Texture" id=6]
 [ext_resource path="res://sprite/Вещи.png" type="Texture" id=7]
 [ext_resource path="res://Scence/Cat.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scence/Cat2.gd" type="Script" id=9]
+[ext_resource path="res://sprite/Учше.png" type="Texture" id=10]
+[ext_resource path="res://sprite/BedRoom.png" type="Texture" id=11]
 
 [sub_resource type="Animation" id=17]
 resource_name = "Angry"
@@ -96,10 +99,11 @@ extents = Vector2( 64.5, 58.8438 )
 
 [node name="Map" type="Node2D"]
 
-[node name="Cat" parent="." instance=ExtResource( 8 )]
+[node name="Cat2" parent="." instance=ExtResource( 8 )]
 position = Vector2( 3462, 1259 )
+script = ExtResource( 9 )
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Cat"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Cat2"]
 anims/Angry = SubResource( 17 )
 anims/RESET = SubResource( 18 )
 
@@ -135,6 +139,16 @@ __meta__ = {
 position = Vector2( 6209, 1357 )
 scale = Vector2( 0.665942, 0.657534 )
 texture = ExtResource( 7 )
+
+[node name="Учше" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 6792.38, 165.75 )
+scale = Vector2( 0.85811, 0.738208 )
+texture = ExtResource( 10 )
+
+[node name="BedRoom" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 4572, 164 )
+scale = Vector2( 0.707715, 0.714455 )
+texture = ExtResource( 11 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
@@ -257,7 +271,7 @@ position = Vector2( 11109.5, 738.844 )
 shape = SubResource( 20 )
 
 [node name="Sock" parent="." instance=ExtResource( 4 )]
-position = Vector2( 11669, 265 )
+position = Vector2( 11657, 259 )
 
 [node name="Camera2D" type="Camera2D" parent="Sock"]
 position = Vector2( 87, 10 )
@@ -284,3 +298,5 @@ texture = ExtResource( 6 )
 __meta__ = {
 "_edit_lock_": true
 }
+
+[connection signal="body_entered" from="Cat2" to="Cat2" method="_on_Cat2_body_entered"]

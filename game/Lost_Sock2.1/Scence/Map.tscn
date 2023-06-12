@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://sprite/Hallway.png" type="Texture" id=1]
 [ext_resource path="res://sprite/Kitchen.png" type="Texture" id=2]
@@ -6,8 +6,10 @@
 [ext_resource path="res://Scence/Sock.tscn" type="PackedScene" id=4]
 [ext_resource path="res://sprite/door.png" type="Texture" id=5]
 [ext_resource path="res://sprite/door2.png" type="Texture" id=6]
-[ext_resource path="res://sprite/Вещи.png" type="Texture" id=7]
+[ext_resource path="res://sprite/Учше.png" type="Texture" id=7]
 [ext_resource path="res://Scence/Cat.tscn" type="PackedScene" id=8]
+[ext_resource path="res://di_one.tscn" type="PackedScene" id=9]
+[ext_resource path="res://sprite/BedRoom.png" type="Texture" id=10]
 
 [sub_resource type="Animation" id=17]
 resource_name = "Angry"
@@ -76,14 +78,14 @@ extents = Vector2( 368, 20.2813 )
 [sub_resource type="RectangleShape2D" id=8]
 extents = Vector2( 153, 6 )
 
-[sub_resource type="RectangleShape2D" id=9]
-extents = Vector2( 399, 3 )
-
 [sub_resource type="RectangleShape2D" id=10]
 extents = Vector2( 299.5, 6.9375 )
 
 [sub_resource type="RectangleShape2D" id=11]
 extents = Vector2( 350, 8 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 399, 3 )
 
 [sub_resource type="CircleShape2D" id=12]
 radius = 63.2851
@@ -138,6 +140,16 @@ __meta__ = {
 position = Vector2( 6209, 1357 )
 scale = Vector2( 0.665942, 0.657534 )
 texture = ExtResource( 7 )
+
+[node name="Учше" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 6790, 160 )
+scale = Vector2( 0.796684, 0.724057 )
+texture = ExtResource( 7 )
+
+[node name="BedRoom" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 4573, 162 )
+scale = Vector2( 0.689911, 0.738152 )
+texture = ExtResource( 10 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
@@ -219,14 +231,6 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Ktable" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 10853, 807 )
-shape = SubResource( 9 )
-one_way_collision = true
-__meta__ = {
-"_edit_lock_": true
-}
-
 [node name="frige" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 11570.5, 450.063 )
 shape = SubResource( 10 )
@@ -239,6 +243,14 @@ __meta__ = {
 position = Vector2( 5692, 1013 )
 shape = SubResource( 11 )
 one_way_collision = true
+
+[node name="Ktable" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 10853, 807 )
+shape = SubResource( 9 )
+one_way_collision = true
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="clothL" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 5188, 1264 )
@@ -260,7 +272,7 @@ position = Vector2( 11109.5, 738.844 )
 shape = SubResource( 20 )
 
 [node name="Sock" parent="." instance=ExtResource( 4 )]
-position = Vector2( 2601, 1326 )
+position = Vector2( 2711, 1318 )
 
 [node name="Camera2D" type="Camera2D" parent="Sock"]
 position = Vector2( 87, 10 )
@@ -280,6 +292,12 @@ position = Vector2( 3305, 1440 )
 scale = Vector2( 0.712871, 0.67148 )
 texture = ExtResource( 5 )
 
+[node name="Stirka" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stirka"]
+position = Vector2( 2368, 1155 )
+shape = SubResource( 19 )
+
 [node name="Door2" type="Sprite" parent="."]
 position = Vector2( 8138, 1400 )
 scale = Vector2( 0.671432, 0.661631 )
@@ -288,10 +306,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Stirka" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Stirka"]
-position = Vector2( 2368, 1155 )
-shape = SubResource( 19 )
+[node name="di_one" parent="." instance=ExtResource( 9 )]
+position = Vector2( 2056, 1101 )
 
 [connection signal="body_entered" from="Stirka" to="Sock" method="_on_Stirka_body_entered"]

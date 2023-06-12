@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://sprite/Hallway.png" type="Texture" id=1]
 [ext_resource path="res://sprite/Kitchen.png" type="Texture" id=2]
@@ -8,6 +8,10 @@
 [ext_resource path="res://sprite/door2.png" type="Texture" id=6]
 [ext_resource path="res://sprite/Вещи.png" type="Texture" id=7]
 [ext_resource path="res://Scence/Cat.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scence/Scissors.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scence/Cat3.gd" type="Script" id=10]
+[ext_resource path="res://sprite/Учше.png" type="Texture" id=11]
+[ext_resource path="res://sprite/BedRoom.png" type="Texture" id=12]
 
 [sub_resource type="Animation" id=17]
 resource_name = "Angry"
@@ -101,6 +105,7 @@ extents = Vector2( 25, 20.25 )
 
 [node name="Cat" parent="." instance=ExtResource( 8 )]
 position = Vector2( 3462, 1259 )
+script = ExtResource( 10 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Cat"]
 anims/Angry = SubResource( 17 )
@@ -138,6 +143,16 @@ __meta__ = {
 position = Vector2( 6209, 1357 )
 scale = Vector2( 0.665942, 0.657534 )
 texture = ExtResource( 7 )
+
+[node name="Учше" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 6789.25, 164.5 )
+scale = Vector2( 0.976659, 0.768868 )
+texture = ExtResource( 11 )
+
+[node name="BedRoom" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 4570, 164 )
+scale = Vector2( 0.706231, 0.770142 )
+texture = ExtResource( 12 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
@@ -260,7 +275,7 @@ position = Vector2( 11109.5, 738.844 )
 shape = SubResource( 20 )
 
 [node name="Sock" parent="." instance=ExtResource( 4 )]
-position = Vector2( 10154, 1320 )
+position = Vector2( 10124, 1322 )
 
 [node name="Camera2D" type="Camera2D" parent="Sock"]
 position = Vector2( 87, 10 )
@@ -293,5 +308,9 @@ __meta__ = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="mic"]
 position = Vector2( 11737, 418.25 )
 shape = SubResource( 21 )
+
+[node name="Scissors" parent="." instance=ExtResource( 9 )]
+visible = false
+position = Vector2( 10583, 606 )
 
 [connection signal="body_entered" from="mic" to="Sock" method="_on_mic_body_entered"]
