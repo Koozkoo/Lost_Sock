@@ -1,0 +1,46 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Two_dialog.gd" type="Script" id=1]
+[ext_resource path="res://sprite/neext.png" type="Texture" id=2]
+[ext_resource path="res://sprite/next.png" type="Texture" id=3]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Two_dialog" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 6409.0
+margin_top = -1690.0
+margin_right = 6409.0
+margin_bottom = -1690.0
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="Two_dialog"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2144.0
+margin_top = 1031.0
+margin_right = 3318.0
+margin_bottom = 1328.0
+rect_scale = Vector2( 0.271335, 0.139255 )
+texture = ExtResource( 3 )
+
+[node name="Tween2" type="Tween" parent="Two_dialog"]
+
+[node name="Ind" type="Sprite" parent="Two_dialog"]
+visible = false
+position = Vector2( 2717, 1136 )
+scale = Vector2( 0.0323741, 0.0261998 )
+texture = ExtResource( 2 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Two_dialog"]
+margin_left = 2148.0
+margin_top = 1033.0
+margin_right = 2354.0
+margin_bottom = 1130.0
+rect_scale = Vector2( 2.8578, 2.034 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+
+[connection signal="tween_completed" from="Two_dialog/Tween2" to="Two_dialog" method="_on_Tween2_tween_completed"]

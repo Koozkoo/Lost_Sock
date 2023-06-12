@@ -1,0 +1,90 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/dialogue_manager/dialogue_resource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+resource_version = 15
+syntax_version = 2
+raw_text = "~ start
+Sock: Где я?
+Sock: Кто я?
+Sock: Вспомнил...но почему я один..?
+Sock: Я надеялся, что со мной этого никогда не случится...
+Sock: Мне нужно срочно найти мою пару!
+*Звуки из стиральной машинки*
+Someone: Кто здесь?     
+"
+errors = [  ]
+titles = {
+"start": "1"
+}
+lines = {
+"0": {
+"next_id": "1",
+"text": "start",
+"type": "title"
+},
+"1": {
+"character": "Sock",
+"character_replacements": [  ],
+"next_id": "2",
+"replacements": [  ],
+"text": "Где я?",
+"translation_key": "Где я?",
+"type": "dialogue"
+},
+"2": {
+"character": "Sock",
+"character_replacements": [  ],
+"next_id": "3",
+"replacements": [  ],
+"text": "Кто я?",
+"translation_key": "Кто я?",
+"type": "dialogue"
+},
+"3": {
+"character": "Sock",
+"character_replacements": [  ],
+"next_id": "4",
+"replacements": [  ],
+"text": "Вспомнил...но почему я один..?",
+"translation_key": "Вспомнил...но почему я один..?",
+"type": "dialogue"
+},
+"4": {
+"character": "Sock",
+"character_replacements": [  ],
+"next_id": "5",
+"replacements": [  ],
+"text": "Я надеялся, что со мной этого никогда не случится...",
+"translation_key": "Я надеялся, что со мной этого никогда не случится...",
+"type": "dialogue"
+},
+"5": {
+"character": "Sock",
+"character_replacements": [  ],
+"next_id": "6",
+"replacements": [  ],
+"text": "Мне нужно срочно найти мою пару!",
+"translation_key": "Мне нужно срочно найти мою пару!",
+"type": "dialogue"
+},
+"6": {
+"character": "",
+"next_id": "7",
+"replacements": [  ],
+"text": "*Звуки из стиральной машинки*",
+"translation_key": "*Звуки из стиральной машинки*",
+"type": "dialogue"
+},
+"7": {
+"character": "Someone",
+"character_replacements": [  ],
+"next_id": "",
+"replacements": [  ],
+"text": "Кто здесь?",
+"translation_key": "Кто здесь?",
+"type": "dialogue"
+}
+}
